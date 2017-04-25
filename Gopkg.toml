@@ -1,0 +1,16 @@
+
+[[dependencies]]
+  branch = "master"
+  name = "github.com/go-redis/redis"
+
+[[dependencies]]
+  branch = "master"
+  name = "github.com/jrallison/go-workers"
+
+[[dependencies]]
+  branch = "master"
+  name = "github.com/pkg/errors"
+
+[[dependencies]]
+  name = "gopkg.in/src-d/go-kallax.v1"
+  version = "1.1.1"

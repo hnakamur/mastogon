@@ -1,0 +1,73 @@
+memo = "abcfc51fba3afe887fa1ee42b4ebdecf6202adeea1b0389f5c009cefa1d174a0"
+
+[[projects]]
+  branch = "v1"
+  name = "github.com/Masterminds/squirrel"
+  packages = ["."]
+  revision = "20f192218cf52a73397fa2df45bdda720f3e47c8"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/bitly/go-simplejson"
+  packages = ["."]
+  revision = "da1a8928f709389522c8023062a3739f3b4af419"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/garyburd/redigo"
+  packages = ["internal","redis"]
+  revision = "0d253a66e6e1349f4581d6d2b300ee434ee2da9f"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/go-redis/redis"
+  packages = [".","internal","internal/consistenthash","internal/hashtag","internal/pool","internal/proto"]
+  revision = "d0dd05b65910c3c658378f2ddd17cc96df56b17d"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/jrallison/go-workers"
+  packages = ["."]
+  revision = "d60d79dbbfbb83f849d2430013a59152845fa598"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/lann/builder"
+  packages = ["."]
+  revision = "f22ce00fd9394014049dad11c244859432bd6820"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/lann/ps"
+  packages = ["."]
+  revision = "62de8c46ede02a7675c4c79c84883eb164cb71e3"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/lib/pq"
+  packages = [".","oid"]
+  revision = "2704adc878c21e1329f46f6e56a1c387d788ff94"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/oklog/ulid"
+  packages = ["."]
+  revision = "66bb6560562feca7045b23db1ae85b01260f87c5"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/pkg/errors"
+  packages = ["."]
+  revision = "ff09b135c25aae272398c51a07235b90a75aa4f0"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/satori/go.uuid"
+  packages = ["."]
+  revision = "5bf94b69c6b68ee1b541973bb8e1144db23a194b"
+
+[[projects]]
+  name = "gopkg.in/src-d/go-kallax.v1"
+  packages = [".","types"]
+  revision = "26fcb7f94ac98eb6520e2bfe1f6a179781a07e60"
+  version = "v1.1.1"

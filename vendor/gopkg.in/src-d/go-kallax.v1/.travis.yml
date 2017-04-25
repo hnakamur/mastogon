@@ -1,0 +1,36 @@
+language: go
+
+go:
+  - 1.7
+  - 1.8
+  - tip
+
+matrix:
+    allow_failures:
+        - go: tip
+
+addons:
+  postgresql: "9.4"
+
+env:
+  - DBNAME=kallax_test DBUSER=postgres DBPASS=''
+
+services:
+  - postgresql
+
+before_script:
+  - psql -c 'create database kallax_test;' -U postgres
+
+install:
+  - rm -rf $GOPATH/src/gopkg.in/src-d
+  - mkdir -p $GOPATH/src/gopkg.in/src-d
+  - mv $PWD $GOPATH/src/gopkg.in/src-d/go-kallax.v1
+  - cd $GOPATH/src/gopkg.in/src-d/go-kallax.v1
+  - go get -v -t .
+  - go get -v -t ./generator/...
+
+script:
+  - make test
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
